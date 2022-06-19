@@ -26,6 +26,7 @@ public class Main {
         System.out.println(message2.length());
         System.out.println(message2.endsWith("k"));
         System.out.println(message2.startsWith("h"));
+        System.out.println(message2.indexOf("i"));
 
 
     }
