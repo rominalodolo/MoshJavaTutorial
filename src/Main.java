@@ -74,5 +74,26 @@ public class Main {
         // list of items { { }, { } };
         int[][] numbers4 = { { 1, 2, 3 }, { 4, 5, 6 } };
         System.out.println(Arrays.deepToString(numbers4));
+
+
+// Constants eg: Pi
+        final float PI = 3.14F;
+// Arithmetic Expressions , operators( / ) and operands( 10, 3 )
+        int result = 10 / 3;
+        System.out.println(result);
+// casting ie converting
+        double result1 = (double)10 / (double)3;
+        System.out.println(result1);
+
+// increment / decrement operator
+        int x = 1;
+        x++; // post fix
+        int y = ++x; // pre fix
+// augmented assignment operators += 
+
+        System.out.println(x);
+
+
+
     }
 }
