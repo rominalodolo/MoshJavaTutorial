@@ -65,7 +65,14 @@ public class Main {
 
         // single dimensional array
         int[] numbers2 = new int[5];
-        // multi dimensional array
-        
+        // multi-dimensional array - 2 by 3 matrix so two rows and three columns
+        // specify the dimension by using the [] as many times as needed
+        int[] [] numbers3 = new int[2][3];
+        numbers3 [0][0] = 1;
+        System.out.println(Arrays.deepToString(numbers3));
+
+        // list of items { { }, { } };
+        int[][] numbers4 = { { 1, 2, 3 }, { 4, 5, 6 } };
+        System.out.println(Arrays.deepToString(numbers4));
     }
 }
