@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Arrays;
 import java.util.Date;
 
 public class Main {
@@ -50,5 +51,21 @@ public class Main {
         numbers[2] = 2;
         System.out.println(numbers); // address of the object in memory
 
+        // use the class arrays in the util package
+        System.out.println(Arrays.toString(numbers));
+
+        // newer array sintax
+        int[] numbers1 = { 2, 3, 4, 5, 1, 4 };
+        System.out.println(numbers1.length);
+        System.out.println(Arrays.toString(numbers1));
+        // Arrays have a fixed length
+        // Use sort method of arrays class
+        Arrays.sort(Arrays.toString(numbers1));
+
+
+        // single dimensional array
+        int[] numbers2 = new int[5];
+        // multi dimensional array
+        
     }
 }
