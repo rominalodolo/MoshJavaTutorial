@@ -229,13 +229,25 @@ public class Main {
                 break;
             default:
                 System.out.println("You're a guest");
-
-
         }
 
-// Conditional Statements
+
+// Loops
+        for(int i = 0; i < 5; i++)
+            System.out.println("Hello World!" + i);
+
+        for(int i = 5; i > 0; i--)
+            System.out.println("Hello World!" + i);
+
+// While Loops
+        int i  = 0;
+        while (i > 0){
+            System.out.println("Hello World!" + i);
+            i--;
+        }
 
 
+// Do While loop
 
 
     }
