@@ -1,5 +1,6 @@
 // mortgage calculator
 
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class project {
@@ -17,7 +18,14 @@ public class project {
         float monthlyInterest = annualInterest / PERCENT / MONTH_IN_YEAR;
 
         System.out.println("Period (years): ");
-        
+        byte years = scanner.nextByte();
+        int numberOfPayments = years * MONTH_IN_YEAR;
 
+        double mortage = principal
+                * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
+                / (Math.pow(1 + monthlyInterest, numberOfPayments) -1);
+
+        String mortageFormatted = NumberFormat.getCurrencyInstance().format();
+        System.out.println("Mortage: " + mortageFormatted);
     }
 }

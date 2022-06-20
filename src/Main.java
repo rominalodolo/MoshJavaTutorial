@@ -149,7 +149,41 @@ public class Main {
         String name1 = scanner.nextLine().trim(); // trim method to clear white space
         System.out.println("You are " + name1);
 
-//
+// Project
+
+// Comparison Operators - used to compare primative values
+        int x3 = 1;
+        int y3 = 1;
+        System.out.println(x3 == y3); // boolean answer true
+        System.out.println(x3 );
+
+
+
+// logical operators - combining multiple, will read from left to right
+        int temperature = 22;
+        boolean isWarm = temperature > 20 && temperature < 30;
+        System.out.println(isWarm);
+
+        boolean hasHighIncome = true;
+        boolean hasGoodCredit = true;
+       // boolean isEligible = hasHighIncome || hasGoodCredit;
+
+        boolean hasCriminalRecord = false;
+        boolean isEligible = (hasHighIncome || hasGoodCredit) && !hasCriminalRecord;
+
+        System.out.println(isEligible);
+
+
+// If statements
+       if temp is greater than 30
+            it's a hot day
+            drink plenty water
+        otherwise, if it's between 20 '
+
+// Conditional Statements
+
+
+
 
     }
 }
