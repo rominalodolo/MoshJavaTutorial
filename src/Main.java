@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.sql.SQLOutput;
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -179,10 +180,38 @@ public class Main {
     //            it's a hot day
     //            drink plenty water
     //        otherwise, if it's between 20
-    //
-    //
-    //
-    //
+    //          it's a nice day
+    //          otherwise,
+    //          it's cold
+        int temp = 32;
+        if(temp > 30){
+            System.out.println("It's a hot day");
+            System.out.println("Drink water");
+        } else if (temp > 20 && temp <= 30) {
+            System.out.println("Beautiful day");
+        } else {
+            System.out.println("Cold day");
+        }
+
+// Simplifying if statements
+
+        int income = 120_000;
+        boolean hasHighIncome = false;
+        if (income > 100_000)
+            hasHighIncome = true;
+
+        // Better code
+        int income1 = 120_000;
+        boolean hasHighIncome = (income1 > 100_000);
+
+// Ternary Operator
+        int income2 = 120_000;
+        String className = income2 > 100_000 ? "First" : "Economy"; // string variable, if the condition(income2 > 100_000) is true add string1 otherwise add string2
+
+
+// Switch Statements
+
+
 
 // Conditional Statements
 

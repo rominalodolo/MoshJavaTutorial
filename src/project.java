@@ -21,11 +21,11 @@ public class project {
         byte years = scanner.nextByte();
         int numberOfPayments = years * MONTH_IN_YEAR;
 
-        double mortage = principal
+        double mortgage = principal
                 * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
                 / (Math.pow(1 + monthlyInterest, numberOfPayments) -1);
 
-        String mortageFormatted = NumberFormat.getCurrencyInstance().format();
-        System.out.println("Mortage: " + mortageFormatted);
+        String mortgageFormatted = NumberFormat.getCurrencyInstance().format();
+        System.out.println("Mortgage: " + mortgageFormatted);
     }
 }
