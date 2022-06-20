@@ -1,6 +1,8 @@
 import java.awt.*;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -124,5 +126,21 @@ public class Main {
 
         int result7 = (int) Math.round(Math.random() * 100);
         System.out.println(result7);
+
+// Formatting numbers
+        // Can't create an instance of the number format because it's abstract
+        // use .get like a factory method
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        String result8 = currency.format(1234567.891);
+        System.out.println(result8);
+
+        // method chaining
+        NumberFormat percent = NumberFormat.getPercentInstance();
+        String result9 = NumberFormat.getPercentInstance().format(0.1);
+        System.out.println(result9);
+
+// Scanner class
+        Scanner scanner = new Scanner(System.in);
+
     }
 }
