@@ -141,6 +141,15 @@ public class Main {
 
 // Scanner class
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Age: ");
+        byte age1 = scanner.nextByte();
+        System.out.println("You are " + age1);
+
+        System.out.print("Name: ");
+        String name1 = scanner.nextLine().trim(); // trim method to clear white space
+        System.out.println("You are " + name1);
+
+//
 
     }
 }
