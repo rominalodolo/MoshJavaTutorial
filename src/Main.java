@@ -106,6 +106,23 @@ public class Main {
         int y2 = Integer.parseInt(x2) + 2;
         System.out.println(y2);
 
+// Math Class
+        int result2 = Math.round(1.1F);
+        System.out.println(result2);
 
+        int result3 = (int)Math.ceil(1.1F);
+        System.out.println(result3);
+
+        int result4 = (int)Math.floor(1.1F); // the largest int that is larger or equal of the value
+        System.out.println(result4);
+
+        int result5 = Math.max(1, 2);
+        System.out.println(result5);
+
+        double result6 = Math.random() * 100;
+        System.out.println(result6);
+
+        int result7 = (int) Math.round(Math.random() * 100);
+        System.out.println(result7);
     }
 }
