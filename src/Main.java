@@ -89,10 +89,22 @@ public class Main {
         int x = 1;
         x++; // post fix
         int y = ++x; // pre fix
-// augmented assignment operators += 
-
+// augmented assignment operators +=
+// BODMAS : order of operators matters
         System.out.println(x);
 
+// Implicit casting ie automatic done by java
+        // byte can be converted into short
+        // byte > short > int > long > float > double
+        double x1 = 1.1;
+        double y1 = x1 + 2;
+        System.out.println(y1);
+
+// Wrapper classes to help convert String to int/short/float/double etc.
+        // parse method
+        String x2 = "1";
+        int y2 = Integer.parseInt(x2) + 2;
+        System.out.println(y2);
 
 
     }
