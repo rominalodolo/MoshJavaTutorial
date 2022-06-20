@@ -175,10 +175,14 @@ public class Main {
 
 
 // If statements
-       if temp is greater than 30
-            it's a hot day
-            drink plenty water
-        otherwise, if it's between 20 '
+    //       if temp is greater than 30
+    //            it's a hot day
+    //            drink plenty water
+    //        otherwise, if it's between 20
+    //
+    //
+    //
+    //
 
 // Conditional Statements
 
