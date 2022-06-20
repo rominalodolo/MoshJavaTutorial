@@ -218,6 +218,20 @@ public class Main {
         else
             System.out.println("You're a guest");
 
+        //     updated code block
+        int role = 1;
+        switch (role){
+            case "admin":
+                System.out.println("You're an admin");
+                break;
+            case "moderator":
+                System.out.println("You're a moderator");
+                break;
+            default:
+                System.out.println("You're a guest");
+
+
+        }
 
 // Conditional Statements
 
