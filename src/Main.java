@@ -3,6 +3,7 @@ import java.sql.SQLOutput;
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -247,7 +248,45 @@ public class Main {
         }
 
 
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+        while (!input.equals("quit")){
+            System.out.println("Input: ");
+            input = scanner.next().toLowerCase();
+            System.out.println(input);
+        }
+
+
 // Do While loop
+        do{
+            System.out.println("Input: ");
+            input = scanner.next().toLowerCase();
+            System.out.println(input);
+        }while (!input.equals("quit"));
+
+
+// Break and continue
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+        while (true){
+            System.out.println("Input: ");
+            input = scanner.next().toLowerCase();
+            if (input.equals("pass"))
+                continue;
+            if (input.equals("quit"))
+                break;
+            System.out.println(input);
+        }
+
+
+// For-Each Loop - for arrays
+        String[] fruits = { "Apple", "Mango", "Orange" };
+
+        for (int i = 0; i < fruits.length; i++)
+            System.out.println(fruits[i]);
+
+        for (String fruit : fruits)
+            System.out.println(fruit);
 
 
     }
